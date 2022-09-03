@@ -1,90 +1,86 @@
 {
-  "name": "webpack5-react18-typescript",
-  "version": "1.0.0",
-  "description": "基于Webpack5 + React18 + typescript的标准化前端脚手架",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" ",
-    "start": "webpack serve --mode development --open --hot",
-    "build": "webpack --mode production",
-    "pretty": "pretty",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged",
-    "commitlint": "commitlint --config commitlint.config.js -e -V"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mega16/webpack5-react18-typescript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mega16/webpack5-react18-typescript/issues"
-  },
-  "homepage": "https://github.com/mega16/webpack5-react18-typescript#readme",
-  "dependencies": {
-    "antd": "^4.22.8",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.18.13",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-transform-runtime": "^7.18.10",
-    "@babel/preset-env": "^7.18.10",
-    "@babel/preset-react": "^7.18.6",
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "@types/node": "^18.7.14",
-    "@types/react": "^18.0.18",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
-    "babel-loader": "^8.2.5",
-    "commitizen": "^4.2.5",
-    "css-loader": "^6.7.1",
-    "cz-customizable": "^7.0.0",
-    "eslint": "^8.23.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.31.4",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-webpack-plugin": "^3.2.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.13",
-    "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.1",
-    "less": "^4.1.3",
-    "less-loader": "^11.0.0",
-    "lint-staged": "^13.0.3",
-    "mini-css-extract-plugin": "^2.6.1",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "prettier": "^2.7.1",
-    "pretty-quick": "^3.1.3",
-    "style-loader": "^3.3.1",
-    "terser-webpack-plugin": "^5.3.6",
-    "ts-loader": "^9.3.1",
-    "typescript": "^4.8.2",
-    "webpack": "^5.74.0",
-    "webpack-bundle-analyzer": "^4.6.1",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1"
-  },
-  "pretty": "./node_modules/.bin/pretty-quick --staged",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js, ts, jsx, tsx}": [
-      "prettier --write",
-      "eslint --cache --fix",
-      "git add"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  }
+	"name": "webpack5-react18-typescript",
+	"version": "1.0.0",
+	"description": "基于Webpack5 + React18 + typescript的标准化前端脚手架",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" ",
+		"start": "webpack serve --mode development --open --hot",
+		"build": "webpack --mode production",
+		"prepare": "husky install",
+		"lint-staged": "lint-staged",
+		"commitlint": "commitlint --config commitlint.config.js -e -V",
+		"commit": "cz",
+		"pretty": "pretty-quick --staged"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mega16/webpack5-react18-typescript.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mega16/webpack5-react18-typescript/issues"
+	},
+	"homepage": "https://github.com/mega16/webpack5-react18-typescript#readme",
+	"dependencies": {
+		"antd": "^4.22.8",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.13",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/plugin-transform-runtime": "^7.18.10",
+		"@babel/preset-env": "^7.18.10",
+		"@babel/preset-react": "^7.18.6",
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@types/node": "^18.7.14",
+		"@types/react": "^18.0.18",
+		"@types/react-dom": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.36.1",
+		"@typescript-eslint/parser": "^5.36.1",
+		"babel-loader": "^8.2.5",
+		"commitizen": "^4.2.5",
+		"css-loader": "^6.7.1",
+		"cz-customizable": "^7.0.0",
+		"eslint": "^8.23.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-react": "^7.31.4",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-webpack-plugin": "^3.2.0",
+		"fork-ts-checker-webpack-plugin": "^7.2.13",
+		"html-webpack-plugin": "^5.5.0",
+		"husky": "^8.0.1",
+		"less": "^4.1.3",
+		"less-loader": "^11.0.0",
+		"lint-staged": "^13.0.3",
+		"mini-css-extract-plugin": "^2.6.1",
+		"optimize-css-assets-webpack-plugin": "^6.0.1",
+		"prettier": "^2.7.1",
+		"pretty-quick": "^3.1.3",
+		"style-loader": "^3.3.1",
+		"terser-webpack-plugin": "^5.3.6",
+		"ts-loader": "^9.3.1",
+		"typescript": "^4.8.2",
+		"webpack": "^5.74.0",
+		"webpack-bundle-analyzer": "^4.6.1",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.10.1"
+	},
+	"pretty": "./node_modules/.bin/pretty-quick --staged",
+	"lint-staged": {
+		"*.{js, ts, jsx, tsx}": [
+			"prettier --write",
+			"eslint --cache --fix",
+			"git add"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-customizable"
+		}
+	}
 }
