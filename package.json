@@ -65,7 +65,7 @@
   "pretty": "./node_modules/.bin/pretty-quick --staged",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pretty"
+      "pre-commit": "pretty-quick --staged"
     }
   }
 }
